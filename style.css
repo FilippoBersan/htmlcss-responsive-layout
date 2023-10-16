@@ -19,6 +19,47 @@ COMMON
 HEADER
  */
 
+header {
+  display: flex;
+  background-color: #0084fd;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  width: 70%;
+  height: 70px;
+  border: 1px solid black;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  color: white;
+  visibility: hidden;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  color: white;
+  align-items: center;
+}
+
+.logo {
+  vertical-align: middle;
+}
+
+.btn-start {
+  display: flex;
+  background-color: white;
+  color: black;
+  height: 30px;
+  align-items: center;
+}
+
 /* 
 *********
 MAIN
@@ -28,3 +69,30 @@ MAIN
 *********
 FOOTER
  */
+
+/* 
+**************
+RESPONSIVE
+ */
+
+@media screen and (max-width: 768px) {
+  .fa-bars {
+    visibility: visible;
+  }
+
+  .btn-start,
+  .list-header {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fa-bars {
+    visibility: visible;
+  }
+
+  .btn-start,
+  .list-header {
+    display: none;
+  }
+}
