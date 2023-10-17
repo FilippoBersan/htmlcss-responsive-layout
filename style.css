@@ -10,6 +10,32 @@ RESET
 }
 
 /* 
+TYPOGRAPHY 
+*/
+* {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.col-text h1 {
+  font-size: 24px;
+  color: #0084fd;
+  text-align: center;
+}
+.col-text p {
+  font-size: 18px bold;
+  text-align: center;
+}
+
+.fa-file-code,
+.fa-compass-drafting,
+.fa-laptop-code,
+.fa-bullhorn {
+  color: #0084fd;
+  font-size: 80px;
+  text-align: center;
+}
+
+/* 
 *********
 COMMON
  */
@@ -56,8 +82,12 @@ header ul {
   display: flex;
   background-color: white;
   color: black;
-  height: 30px;
+  height: 40px;
+  width: 100px;
   align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+
 }
 
 /* 
@@ -92,19 +122,50 @@ MAIN
 
 .box-1 {
   display: flex;
-  padding: 20px;
+
   width: 80%;
-  height: 100%;
+
   background-color: #b5ddff;
   gap: 50px;
 }
 
 .col-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   border: 1px dashed blue;
+  width: 100%;
+  line-height: 25px;
+  padding-left: 20px;
+  height: 100%;
+  padding-right: 20px;
+}
+.btnsec-1 {
+  display: flex;
+  background-color: #0084fd;
+  color: white;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  letter-spacing: 3px;
+  font-size: 19px;
 }
 
 .col-img {
+  display: flex;
+  justify-self: end;
+  align-self: flex-end;
+
   border: 1px dashed blue;
+  /* background-image: url(img/phone.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80%;
+}
+
+.col-img img {
+  height: 200px;
 }
 
 .box-2 {
@@ -531,4 +592,32 @@ RESPONSIVE
   .container-sec-5 {
     padding: 0;
   }
+
+  .box-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.col-text{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
 }
+ 
+
+
+.container-row-1{
+  display: flex;
+  flex-direction: column;
+}
+
+  .container-sec-1{
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
+
+
+
