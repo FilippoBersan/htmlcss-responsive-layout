@@ -63,6 +63,16 @@ TYPOGRAPHY
   font-size: 17px;
 }
 
+.text-boxsec-4 h3 {
+  font-size: 72px;
+  color: #9792e4;
+}
+
+.text-boxsec-4 h4 {
+  font-size: 24px;
+  color: #9792e4;
+}
+
 /* 
 
 
@@ -401,7 +411,7 @@ MAIN
   display: flex;
   width: 70%;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   gap: 20px;
 
@@ -416,7 +426,7 @@ MAIN
 .containerbox-sec-4 {
   display: flex;
   flex-direction: row;
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   width: 100%;
   height: 100%;
   flex-wrap: wrap;
@@ -427,15 +437,17 @@ MAIN
 .boxsec-4 {
   display: flex;
   width: calc(100% / 3 - 20px);
+  padding: 30px;
   height: 49%;
-  border: 2px dashed blue;
+  /* border: 2px dashed blue; */
   background-color: white;
+  border-radius: 30px;
 }
 
 .text-boxsec-4 {
   display: flex;
   flex-direction: column;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
   gap: 30px;
   line-height: 25px;
 }
@@ -447,8 +459,9 @@ MAIN
   height: 30px;
   justify-content: center;
   align-items: center;
-  align-self: center;
+  border-radius: 100px;
   width: 30%;
+  letter-spacing: 3px;
 }
 
 /* 5a sezione
@@ -457,7 +470,7 @@ MAIN
   display: flex;
   width: 70%;
 
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   gap: 20px;
 
@@ -468,7 +481,7 @@ MAIN
 .col1-sec-5 {
   display: flex;
   width: 65%;
-  border: 1px dashed green;
+  /* border: 1px dashed green; */
   line-height: 40px;
   flex-direction: column;
   align-content: space-between;
