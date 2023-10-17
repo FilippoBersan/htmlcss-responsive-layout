@@ -356,7 +356,7 @@ FOOTER
 RESPONSIVE
  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .fa-bars {
     visibility: visible;
   }
@@ -385,7 +385,7 @@ RESPONSIVE
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .fa-bars {
     visibility: visible;
   }
