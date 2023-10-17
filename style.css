@@ -55,7 +55,7 @@ header {
   display: flex;
   width: 70%;
   height: 70px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   align-items: center;
   justify-content: space-between;
@@ -87,7 +87,6 @@ header ul {
   align-items: center;
   border-radius: 50px;
   justify-content: center;
-
 }
 
 /* 
@@ -102,7 +101,7 @@ MAIN
   display: flex;
   width: 70%;
   height: 350px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   gap: 20px;
   margin-top: 40px;
@@ -112,7 +111,7 @@ MAIN
   display: flex;
   width: 70%;
   height: 350px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 0 auto;
   gap: 20px;
   margin-top: 20px;
@@ -126,14 +125,13 @@ MAIN
   width: 80%;
 
   background-color: #b5ddff;
-  gap: 50px;
 }
 
 .col-text {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border: 1px dashed blue;
+  /* border: 1px dashed blue; */
   width: 100%;
   line-height: 25px;
   padding-left: 20px;
@@ -154,18 +152,16 @@ MAIN
 
 .col-img {
   display: flex;
-  justify-self: end;
+
   align-self: flex-end;
 
-  border: 1px dashed blue;
+  /* border: 1px dashed blue; */
   /* background-image: url(img/phone.png); */
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 80%;
+  background-size: cover;
 }
 
 .col-img img {
-  height: 200px;
+  height: 220px;
 }
 
 .box-2 {
@@ -539,6 +535,34 @@ RESPONSIVE
   .boxsec-4 {
     width: calc(100% / 2 - 20px);
   }
+
+  .container-row-1,
+  .container-row-2 {
+    height: auto;
+  }
+  .box-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 30px 0px 30px;
+  }
+  .col-text {
+    display: flex;
+    gap: 50px;
+  }
+
+  .box-2 {
+    height: auto;
+    padding: 30px;
+  }
+  .col-text {
+    height: auto;
+  }
+
+  .col-img {
+    display: flex;
+    align-self: flex-start;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -599,25 +623,21 @@ RESPONSIVE
     align-items: center;
   }
 
-.col-text{
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-}
- 
-
-
-.container-row-1{
-  display: flex;
-  flex-direction: column;
-}
-
-  .container-sec-1{
-    height: 1650px;
+  .col-text {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    height: 400px;
   }
 
+  .container-row-1,
+  .container-row-2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 
-
+  .col-img {
+    display: flex;
+    align-self: center;
+  }
+}
